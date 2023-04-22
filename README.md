@@ -11,9 +11,8 @@
   - Full responsive pages using bootstrap.
   - Tracking all employee's activities from admin panel.
   - Tracking Logs on login with location and ip (requires internet access).
-  - You can verify or reject current and new registers.
-  - Ban System.
-  - Verification Control System.
+  - Ban System (You can ban or unban current and new registers).
+  - Verification Control System (You can verify or reject current and new registers).
   - Handling authentications and authorizations of accessing pages (using sessionStorage).
   - All validations are considered using javascript.
   - Auto detect all absent employees after the specified work time.
@@ -27,7 +26,7 @@
   - You won't be able to login until the admin/s accept your request.
   
   #### Forgot Password
-  You will get a message containing the new password to the entered email if the email is found in the localstorage.
+  - You will get a message containing the new password to the entered email if the email is found in the localstorage.
   
   #### Dashboard
   - It's just a welcome message.
