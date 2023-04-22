@@ -11,10 +11,9 @@
   - Full responsive pages using bootstrap.
   - Tracking all employee's activities from admin panel.
   - Tracking Logs on login with location and ip (requires internet access).
-  - You can verify or reject current and new employees.
+  - You can verify or reject current and new registers.
   - Ban System.
   - Verification Control System.
-  - Auto detected absent employees.
   - Handling authentications and authorizations of accessing pages (using sessionStorage).
   - All validations are considered using javascript.
   - Auto detect all absent employees after the specified work time.
@@ -82,11 +81,13 @@
 
 ## USAGE
   - The system will auto create an admin account if the account wasn't found in the localstorage or if the localstorage wasn't even found in login page with the following data:
-  Username : admin
-  Password : 123456
+  1. Username : admin
+  2. Password : 123456
   
   - You can login, Download the JSON file, Make your own changes, and make a new localstorage with name "jsondata" then copy/paste the data inside the JSON file.
-  
+  - Work time is from 8:30 AM to 3:30 PM
+  - Late time starts from 9:00 AM
+  - Absent time starts after 3:30 PM
 ## PREVIEW
   ![alt text](https://i.imgur.com/DgVdCLb.gif)
 
