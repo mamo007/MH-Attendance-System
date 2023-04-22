@@ -1,6 +1,6 @@
 # MH - Attendance System
 
-## INTRO 
+## DESCRIPTION
  MH - Attendance System is a client-side project for taking employees attendance, showing their attendance in employee reports page, and showing all reports to the admin/s.
  The project is mainly made for ITI (Client-Side project). <3
 
