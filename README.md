@@ -77,6 +77,8 @@
   - Datatables
   - Chart
   - Fontawesome
+  - MD5
+  - SMTP
 
 ## USAGE
   - The system will auto create an admin account if the account wasn't found in the localstorage or if the localstorage wasn't even found in login page with the following data:
