@@ -93,7 +93,8 @@
 ## TO-DO List
 
 - Make an Account control in the admin panel.
-- Add more features.
+- Add message center.
+- Add notification system.
 
 
 ## ABOUT
