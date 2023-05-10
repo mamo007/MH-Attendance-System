@@ -1,5 +1,9 @@
 "use strict"
 
+// variables
+
+let InputEmail = document.getElementById('exampleInputEmail');
+
 // default
 
 document.getElementById('wrongData').style.display = "none";
@@ -7,7 +11,7 @@ document.getElementById('wrongData').style.display = "none";
 // main
 
 document.getElementById('forgotBtn').addEventListener('click', function(e){
-    if(document.getElementById('exampleInputEmail').value.trim() == "") return;
+    if(InputEmail.value.trim() == "") return;
 
     if(localStorage.getItem('jsondata') != null)
     {
@@ -33,8 +37,8 @@ document.getElementById('forgotBtn').addEventListener('click', function(e){
     if(localStorage.getItem('jsondata') == null || !checkEmailExist())
     {
         e.preventDefault();
-        document.getElementById('exampleInputEmail').value = "";
-        document.getElementById('exampleInputEmail').focus();
+        InputEmail.value = "";
+        InputEmail.focus();
         return false;
     }
 });
@@ -42,7 +46,7 @@ document.getElementById('forgotBtn').addEventListener('click', function(e){
 var email, password, jsonContent=[];
 
 function checkEmailExist(){
-    return localStorage.getItem('jsondata').includes(document.getElementById('exampleInputEmail').value);
+    return localStorage.getItem('jsondata').includes(InputEmail.value);
 }
 
 function generatePassword() {
@@ -60,14 +64,14 @@ function sendData(){
     jsonContent = JSON.parse(localStorage.getItem('jsondata'));
 
     for(let i=0;i<jsonContent.length; i++)
-        if(jsonContent[i].email == document.getElementById('exampleInputEmail').value)
-            jsonContent[i].password = password;
+        if(jsonContent[i].email == InputEmail.value)
+            jsonContent[i].password = md5(password);
 
     localStorage.setItem('jsondata', JSON.stringify(jsonContent));
 }
 
 function getDataFromForm(){
-    email = document.getElementById('exampleInputEmail').value;
+    email = InputEmail.value;
     password = generatePassword();
     sendData();
 }

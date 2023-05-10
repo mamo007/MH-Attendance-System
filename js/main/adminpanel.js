@@ -38,7 +38,7 @@ function callMe(){
 callMe();
 
 function showemployee(){
-    let createbody = document.createElement('tbody')
+    let createbody = document.createElement('tbody');
     for (let i = 0; i < jsonReports.length; i++) 
     {
         if(jsonReports[i].flag == 0) // prevent showing admin data
